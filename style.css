@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #25282a;
+    background-color: #6f7a81;
     color: white;
 }
 .slider {
@@ -40,11 +40,11 @@ body{
 .controls {
     display: flex;
 }
-.dot{
+.control{
     padding: 7px;
     margin: 5px;
-    border: 2px solid #71abff;
-    background-color: #71abff;
+    border: 2px solid #566d8f;
+    background-color: #1d2838;
     border-radius: 100%;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
@@ -56,24 +56,24 @@ body{
     -ms-transition: all 0.5;
     -o-transition: all 0.5;
 }
-.dot:hover{
+.control:hover{
     background-color: #fff;
     border: 2px solid white;
     cursor: pointer;
 }
         
-#r1:checked ~ .wrapper .dot:nth-of-type(1):hover,
-#r2:checked ~ .wrapper .dot:nth-of-type(2):hover,
-#r3:checked ~ .wrapper .dot:nth-of-type(3):hover,
-#r4:checked ~ .wrapper .dot:nth-of-type(4):hover,
-#r5:checked ~ .wrapper .dot:nth-of-type(5):hover {
+#r1:checked ~ .wrapper .control:nth-of-type(1):hover,
+#r2:checked ~ .wrapper .control:nth-of-type(2):hover,
+#r3:checked ~ .wrapper .control:nth-of-type(3):hover,
+#r4:checked ~ .wrapper .control:nth-of-type(4):hover,
+#r5:checked ~ .wrapper .control:nth-of-type(5):hover {
     border: 2px solid white;
 }
-#r1:checked ~ .wrapper .dot:nth-of-type(1),
-#r2:checked ~ .wrapper .dot:nth-of-type(2),
-#r3:checked ~ .wrapper .dot:nth-of-type(3),
-#r4:checked ~ .wrapper .dot:nth-of-type(4),    
-#r5:checked ~ .wrapper .dot:nth-of-type(5) {
+#r1:checked ~ .wrapper .control:nth-of-type(1),
+#r2:checked ~ .wrapper .control:nth-of-type(2),
+#r3:checked ~ .wrapper .control:nth-of-type(3),
+#r4:checked ~ .wrapper .control:nth-of-type(4),    
+#r5:checked ~ .wrapper .control:nth-of-type(5) {
     border: 2px solid #71abff;
     background-color: rgba(0,0,0,0);
 }   
@@ -82,7 +82,7 @@ input[name="r"]{
     position: absolute;
     visibility: hidden;
 }
-/* переключение*/
+
 #r1:checked ~ .slides > .s1{  
     margin-left: 0;
 }
